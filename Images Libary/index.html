@@ -4,71 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Libary</title>
+  <title>FC ESCUELA</title>
 </head>
 <body>
-  <h2 style="text-align: center;">FC ESCUELA</h2>
-  <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="Đá bóng/DSC_0001.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img src="Đá bóng/DSC_0002.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="Đá bóng/DSC_0003.jpg" style="width:100%">
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="Đá bóng/DSC_0006.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img src="Đá bóng/DSC_0007.jpg" style="width:100%">
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img src="Đá bóng/DSC_0008.jpg" style="width:100%">
-    </div>
-      
-    <a class="prev" onclick="plusSlides(1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="Đá bóng/DSC_0001.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ảnh 1 ">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="Đá bóng/DSC_0002.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ảnh 2">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="Đá bóng/DSC_0003.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ảnh 3">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="Đá bóng/DSC_0006.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ảnh 4">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="Đá bóng/DSC_0007.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ảnh 5">
-      </div>    
-      <div class="column">
-        <img class="demo cursor" src="Đá bóng/DSC_0008.jpg" style="width:100%" onclick="currentSlide(6)" alt="Ảnh 6">
+  <header>
+    <h1>FC ESCUELA Picture Gallery</h1>
+    <p>Pictures of team</p>
+  </header>
+
+  <section class="gallery">
+    <div class="image-card" id="image1">
+      <img src="./Đá bóng/DSC_0002.jpg" alt="Image1">
+      <div class="overlay">
+        <h2>Ảnh đá bóng</h2>
+        <p>Năm 2023</p>
       </div>
     </div>
-  </div>
-  
-  
+    <div class="image-card" id="image2">
+      <img src="./Đá bóng/DSC_0003.jpg" alt="Image2">
+      <div class="overlay">
+        <h2>Football picture</h2>
+        <p>Year 2023</p>
+      </div>
+    </div>
+    <div class="image-card" id="images3">
+      <img src="./Các hoạt động khác/z5957454859686_0ad6ac67f0527574b40cfbaf6f16ca5f.jpg" alt="Image3">
+      <div class="overlay">
+        <h2>Ảnh đá bóng</h2>
+        <p>Năm 2023</p>
+      </div>
+    </div>
+  </section>
+  <script src="./app.js"></script>
 </body>
-<script src="./app.js"></script>
 </html>
