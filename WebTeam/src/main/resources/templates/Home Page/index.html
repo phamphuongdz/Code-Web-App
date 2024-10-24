@@ -3,87 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
+    <!--Header Section-->
     <header>
         <div class="logo">
-            <img src="./Images/293777802_111672594944876_8115027638752115990_n.jpg" alt="FC ESCUELA Logo">
+            <img src="./Images/293777802_111672594944876_8115027638752115990_n.jpg" alt="Club Logo">
         </div>
         <nav>
-            <ul><a href="#">Home</a></ul>
-            <ul><a href="#">Team</a></ul>
-            <ul><a href="#">Matches</a></ul>
-            <ul><a href="#">News</a></ul>
-            <ul><a href="#">Login</a></ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
         </nav>
+        <div class="header-right">
+            <input type="text" placeholder="Search">
+            <a href="#" class="btn">Login/Signup</a>
+        </div>
     </header>
 
+    <!--Hero Section-->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to FC ESCUELA Page</h1>
-            <p>Offical Website</p>
+        <div class="hero-text">
+            <h1>Welcome to [FC ESCUELA]</h1>
+            <p>Lastest news,match updates, and exclusive merchandise</p>
+            <a href="#">Explore More</a>
         </div>
     </section>
 
-    <section class="news">
-        <h2>Lastest News</h2>
-        <div class="news-grid">
-            <article>
-                <img src="./Images/DSC_0010.jpg" alt="News 1">
-                <h3>Match Highlights</h3>
-                <p>FC ESCUELA wins 2-1 in a thrilling match</p>
-            </article>
-            <article>
-                <img src="./Images/snapedit_1729678117484.jpg" alt="News 2">
-                <h3>Players Transfers</h3>
-                <p>News Players signings announced for the season!</p>
-            </article>
-            <article>
-                <img src="news3.jpg" alt="News Image 3">
-                <h3>Upcoming Matches</h3>
-                <p>Don't miss the upcoming El Clásico!</p>
-            </article>
-        </div>
+    <!--Upcoming Matches Section-->
+    <section class="matches">
+        <h2>Upcoming Matches</h2>
+        <div class="match-card"></div>
     </section>
-    
-    <section class="fixtures">
-        <h2>Upcoming Fixtures</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Opponent</th>
-                    <th>Venue</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Oct 27,2024</td>
-                    <td>FC 11A2 Ngoc Hoi</td>
-                    <td>Dong My Stadium</td>
-                </tr>
-                <tr>
-                    <td>Nov 1,2024</td>
-                    <td>FC 12A2 Ngoc Hoi</td>
-                    <td>Dong My Stadium</td>
-                </tr>
-                <tr>
-                    <td>Nov 5,2024</td>
-                    <td>FC 12A3 Ngoc Hoi</td>
-                    <td>Dong My Stadium</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 FC ESCUELA Football Club|All Right Reserved</p>
-        </div>
-    </footer>
-    <script src="./app.js"></script>
 </body>
 </html>
