@@ -1,27 +1,28 @@
+/* General Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-h1,h2,h3{
+h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
 
-/*Header*/
-header{
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
 }
@@ -36,20 +37,20 @@ nav ul {
     gap: 20px;
 }
 
-.header-right{
-     display: flex;
-     align-items: center;
-     gap: 10px;
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.header-right input{
+.header-right input {
     padding: 5px;
 }
 
-/*Hero Section*/
+/* Hero Section */
 .hero {
     position: relative;
-    background-image: url(./Images/snapedit_1729678117484.jpg);
+    background-image: url('./Images/snapedit_1729678117484.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -60,11 +61,11 @@ nav ul {
     align-items: center;
 }
 
-.hero-text{
+.hero-text {
     z-index: 1;
 }
 
-.hero-slider{
+.hero-slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,12 +73,13 @@ nav ul {
     height: 100%;
 }
 
-/*Matches Section*/
-.matches{
+/* Matches Section */
+.matches {
     padding: 20px;
     background-color: white;
     text-align: center;
 }
+
 .match-card {
     display: flex;
     justify-content: space-around;
