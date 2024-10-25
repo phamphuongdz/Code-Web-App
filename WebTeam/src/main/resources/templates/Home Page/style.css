@@ -1,127 +1,105 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
+header{
+    background-color: #1a1a1a;
+    color: #fff;
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
     align-items: center;
-    background-color: #000;
+}
+
+header .logo img{
+    width: 150px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
     color: #fff;
-    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.logo img {
-    width: 50px;
+.search input{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.header-right input {
-    padding: 5px;
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    background-image: url('./Images/snapedit_1729678117484.jpg');
+.hero{
+    background-image: url(./Images/z5957462010438_d48a47907a206a58340467ffa2f8dc6f.jpg);
+    height: 500px;
     background-size: cover;
     background-position: center;
-    height: 500px;
-    color: white;
-    text-align: center;
+    color: #fff;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-}
-
-.hero-text {
-    z-index: 1;
-}
-
-.hero-slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Matches Section */
-.matches {
-    padding: 20px;
-    background-color: white;
     text-align: center;
 }
+.hero-text h1 {
+    font-size: 3rem;
+}
 
-.match-card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #eaeaea;
-    padding: 20px;
+.cta-button {
+    background-color: #ff4742;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
     margin-top: 20px;
 }
 
-/* News Section */
-.news {
-    padding: 20px;
-}
-
-.news-articles {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-/* Shop Section */
-.shop {
-    padding: 20px;
-    background-color: white;
+.featured-news {
+    background-color: #fff;
+    padding: 2rem;
     text-align: center;
 }
 
-.shop-items {
+.news-cards {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Footer */
+.news-cards .card {
+    width: 30%;
+    background-color: #f9f9f9;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.news-cards img {
+    width: 100%;
+    border-radius: 5px;
+}
+
 footer {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 1rem 0;
 }
 
-footer .social-media a {
-    margin: 0 10px;
-    color: #fff;
+.social-links img {
+    width: 30px;
+    margin-right: 10px;
 }
