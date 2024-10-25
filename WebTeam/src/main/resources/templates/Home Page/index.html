@@ -4,58 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>FC ESCUELA</title>
+    <title>Home Page</title>
 </head>
 <body>
-     <header>
+    <!--Headerr Section-->
+    <header>
         <div class="logo">
-            <img src="./Images/Logo.jpg" alt="Football Logo">
+            <img src="./Images/Logo.jpg" alt="">
         </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Teams</a></li>
+                <li><a href="#">Matches</a></li>
                 <li><a href="#">Fixtures</a></li>
-                <li><a href="#">Tickets</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="Search">
-        </div>
-     </header>
+    </header>
 
-     <section class="hero">
-        <div class="hero-text">
-            <h1>FC ESCUELA</h1>
-            <p>Catch the latest matches,news and more</p>
-            <a href="#" class="cta-button">View Upcoming Matches</a>
+    <!--Banner-->
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Welcome to FC ESCUELA</h2>
+            <p>Stay updated with live scores, schedules, and news</p>
         </div>
-     </section>
+    </section>
 
-     <section class="featured-news">
+    <!--Matches Section-->
+    <section id="matches">
+        <h2>Upcoming Matches</h2>
+        <div class="matches-container">
+            <!--Matches will be dynamically instered here-->
+        </div>
+    </section>
+
+    <!--News Section-->
+    <section id="news">
         <h2>Latest News</h2>
-        <div class="new-cards">
-            <div class="card">
-                <img src="./Images/DSC_0010.jpg" alt="">
-                <h3>FC ESCUELA thắng đội lão tướng</h3>
-                <p>Hòa chung không khí xuân...</p>
-            </div>
-        <div class="card">
-            <img src="./Images/454360830_483368634442661_907453111156817040_n.jpg" alt="">
-            <h3>FC ESCUELA có 1 trận thắng nhọc nhằn</h3>
-            <p>FC ESCUELA đã có 1 trận thắng nhọc nhằn trước đội 9A2 Liên Ninh</p>
+        <div class="news-container">
+            <!--News items will be dynamically inserted here-->
         </div>
-        </div>
-     </section>
+    </section>
 
-     <footer>
+    <!--Footer section-->
+    <footer>
         <p>&copy; 2024 FC ESCUELA.All Right Reserved</p>
-        <div class="social-links">
-           <a href="#"><img src="./Images/icons8-facebook-50.png" alt=""></a>
-           <a href="#"><img src="./Images/icons8-google-50.png" alt=""></a>
-        </div>
-     </footer>
+    </footer>
+
+    <script src="./app.js"></script>
 </body>
 </html>

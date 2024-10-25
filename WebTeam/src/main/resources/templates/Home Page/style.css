@@ -6,100 +6,72 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f9;
 }
 
+/*Header*/
 header{
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     align-items: center;
 }
 
-header .logo img{
-    width: 150px;
+header .logo h1{
+    margin-left: 2rem;
 }
 
-nav ul{
-    list-style-type: none;
+header nav ul{
     display: flex;
+    list-style: none;
 }
 
-nav ul li{
-    margin-right: 20px;
+header nav ul li{
+    margin: 0 1rem;
 }
 
-nav ul li a{
-    color: #fff;
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.search input{
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-}
-.hero{
-    background-image: url(./Images/z5957462010438_d48a47907a206a58340467ffa2f8dc6f.jpg);
-    height: 500px;
+/*Banner*/
+.banner{
+    background-color: url('./Images/DSC_0010.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
     text-align: center;
 }
-.hero-text h1 {
-    font-size: 3rem;
-}
 
-.cta-button {
-    background-color: #ff4742;
-    color: #fff;
+.banner-text{
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
 }
 
-.featured-news {
-    background-color: #fff;
+/*Matches Section*/
+#matches {
     padding: 2rem;
+    background-color: #fff;
     text-align: center;
 }
 
-.news-cards {
+.matches-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.news-cards .card {
-    width: 30%;
-    background-color: #f9f9f9;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.news-cards img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-footer {
+/*Footer*/
+footer{
     background-color: #333;
-    color: #fff;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    padding: 1rem 0;
-}
-
-.social-links img {
-    width: 30px;
-    margin-right: 10px;
 }
