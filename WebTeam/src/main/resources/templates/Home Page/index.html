@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Home Page</title>
+    <title>Football Club Homepage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Headerr Section-->
     <header>
         <div class="logo">
-            <img src="./Images/Logo.jpg" alt="">
+            <h1>Football Club</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Matches</a></li>
-                <li><a href="#">Fixtures</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#fixtures">Fixtures</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Banner-->
-    <section class="banner">
-        <div class="banner-text">
-            <h2>Welcome to FC ESCUELA</h2>
-            <p>Stay updated with live scores, schedules, and news</p>
-        </div>
-    </section>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Football Club</h2>
+            <p>Join us in our journey to victory!</p>
+        </section>
 
-    <!--Matches Section-->
-    <section id="matches">
-        <h2>Upcoming Matches</h2>
-        <div class="matches-container">
-            <!--Matches will be dynamically instered here-->
-        </div>
-    </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a passionate football club dedicated to excellence on and off the field.</p>
+        </section>
 
-    <!--News Section-->
-    <section id="news">
-        <h2>Latest News</h2>
-        <div class="news-container">
-            <!--News items will be dynamically inserted here-->
-        </div>
-    </section>
+        <section id="teams">
+            <h2>Our Teams</h2>
+            <p>Meet our talented players and coaching staff.</p>
+        </section>
 
-    <!--Footer section-->
+        <section id="fixtures">
+            <h2>Upcoming Fixtures</h2>
+            <p>Check out our schedule for upcoming matches.</p>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 FC ESCUELA.All Right Reserved</p>
+        <p>&copy; 2024 Football Club. All rights reserved.</p>
     </footer>
-
-    <script src="./app.js"></script>
 </body>
 </html>

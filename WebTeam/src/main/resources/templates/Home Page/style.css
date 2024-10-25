@@ -1,77 +1,56 @@
-*{
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f9;
-}
-
-/*Header*/
-header{
-    background-color: #333;
+header {
+    background-color: #007bff;
     color: white;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
+    text-align: center;
 }
 
-header .logo h1{
-    margin-left: 2rem;
+.logo h1 {
+    margin: 0;
 }
 
-header nav ul{
-    display: flex;
-    list-style: none;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-header nav ul li{
-    margin: 0 1rem;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-/*Banner*/
-.banner{
-    background-color: url('./Images/DSC_0010.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
     color: white;
-    text-align: center;
-}
-
-.banner-text{
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem 2rem;
-}
-
-/*Matches Section*/
-#matches {
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.matches-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-/*Footer*/
-footer{
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
