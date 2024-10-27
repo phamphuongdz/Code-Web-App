@@ -8,6 +8,6 @@ public class HomeController {
     //Khi user truy cap vao endpoint thi homepage dc goi
     @GetMapping("/")
     public String home() {
-        return "index";
+        return "../";
     }
 }
