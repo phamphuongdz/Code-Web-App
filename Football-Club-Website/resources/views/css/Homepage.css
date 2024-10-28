@@ -1,114 +1,91 @@
-/* General Reset */
+/* Reset default styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-  }
-  
-  .nav-links li {
-    display: inline;
-    margin: 0 1rem;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('../Img/HomePage/DSC_0010.jpg') no-repeat center center/cover;
-    color: white;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .cta-button {
-    padding: 0.5rem 1.5rem;
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .cta-button:hover {
-    background-color: #004494;
-  }
-  
-  /* Sections */
-  .section {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .about, .matches, .team, .sponsors {
-    background-color: #f4f4f4;
-  }
-  
-  .match-card, .player-card {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .sponsor-logos img {
-    max-width: 100px;
-    margin: 1rem;
-  }
-  
-  /* Footer */
-  footer {
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    text-align: center;
-  }
-  
-  .social-links a {
-    color: white;
-    margin: 0 0.5rem;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header, .navbar {
+  background-color: #1e2a38;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #f0a500;
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url('../Img/HomePage/DSC_0010.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 300px 30px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.carousel, .matches, .team {
+  padding: 40px 20px;
+}
+
+.carousel-item {
+  background: #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.match-card, .player-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.player-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer-content {
+  background-color: #1e2a38;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
