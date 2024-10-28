@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Club</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('') }}">
 </head>
 <body>
     <!-- Navbar -->
@@ -12,7 +12,7 @@
         <nav class="navbar">
             <a href="#" class="logo">Football Club</a>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="./home.blade.php">Home</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Schedule</a></li>
                 <li><a href="#">Tickets</a></li>
