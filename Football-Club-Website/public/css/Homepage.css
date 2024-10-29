@@ -1,91 +1,60 @@
-/* Reset default styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.header, .navbar {
-  background-color: #1e2a38;
+header {
+  background-color: #A50034; /* FC Barcelona color */
   color: white;
-  padding: 10px 20px;
-}
-
-.navbar {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-links {
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
-.nav-links a {
+nav a {
   color: white;
   text-decoration: none;
-  padding: 5px 10px;
 }
 
-.nav-links a:hover {
-  background-color: #f0a500;
-  border-radius: 5px;
-}
-
-.hero {
+#hero {
   background-image: url('../Img/HomePage/DSC_0010.jpg');
   background-size: cover;
-  background-position: center;
   color: white;
   text-align: center;
   padding: 300px 30px;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-}
-
-.carousel, .matches, .team {
-  padding: 40px 20px;
-}
-
-.carousel-item {
-  background: #ddd;
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 10px;
-}
-
-.match-card, .player-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-}
-
-.player-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.footer-content {
-  background-color: #1e2a38;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.social-links a {
-  color: white;
-  margin: 0 10px;
+.btn {
+  background-color: #FFD700; /* Button color */
+  color: black;
+  padding: 10px 20px;
   text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #A50034;
+  color: white;
 }
