@@ -47,9 +47,10 @@ nav a {
 
 section {
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px auto;
   background-color: white;
   border-radius: 5px;
+  text-align: center;
 }
 
 footer {
