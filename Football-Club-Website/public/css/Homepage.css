@@ -1,50 +1,186 @@
-/* Reset margins for sections */
-body, html {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* Hero Banner Styling */
-.hero {
-  background: url('../Img/HomePage/snapedit_1730084318903.jpg') no-repeat center center;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+h1, h2, h3, h4 {
+  margin: 0;
 }
 
-.hero h1 {
-  font-size: 3em;
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Header Styles */
+header {
+  background-color: #003DA5; /* Club color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo h1 {
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
   font-weight: bold;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin-top: 20px;
-}
-
-.hero .btn-primary {
-  margin-right: 10px;
-}
-
-/* Card Styling */
-.card {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-/* Footer */
-footer {
+/* Hero Section Styles */
+.hero {
+  background-image: url('../Img/HomePage/DSC_0010.jpg'); /* Replace with your image */
+  background-size: cover;
+  height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
-footer a {
-  color: #fff;
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for overlay */
+  z-index: 1;
+}
+
+.hero h2, .hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #FFCC00; /* Call to action color */
+  padding: 10px 20px;
   text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button:hover {
+  background-color: #FFD700; /* Lighter shade for hover */
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Latest News Section Styles */
+.latest-news {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.latest-news h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.latest-news article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Player Profiles Section Styles */
+.player-profiles {
+  padding: 20px;
+  text-align: center;
+}
+
+.player-profiles h3 {
+  margin-bottom: 20px;
+}
+
+.player {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.player img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003DA5; /* Club color */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media {
+  margin: 10px 0;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h2 {
+      font-size: 2.5em;
+  }
+
+  .hero p {
+      font-size: 1.2em;
+  }
+
+  .player {
+      width: 90%; /* Make player profiles stack on smaller screens */
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 5px 0;
+  }
 }
