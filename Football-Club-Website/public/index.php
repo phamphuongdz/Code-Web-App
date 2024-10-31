@@ -9,13 +9,14 @@
 <body>
   <!--Navbar-->
   <header class="navbar">
-    <h1 class="logo">Football Club</h1>
+    <h1 class="logo">FC ESCUELA</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Fixtures</a></li>
         <li><a href="#">Contact Us</a></li>
+        <li><a href="#">News</a></li>
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
@@ -66,7 +67,7 @@
       <div class="card">
         <img src="./Img/Player/323710267_1454181644992492_5303137637488456783_n.jpg" alt="Player 2">
         <h3>Player 2</h3>
-        <p>Position: Defender</p>
+        <p>Position: Midfielder</p>
       </div>
     </div>
   </section>
