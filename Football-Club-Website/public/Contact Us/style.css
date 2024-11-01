@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact-container{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-container h2{
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contact-container p{
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-form label{
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    color: #333;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea{
+    resize: vertical;
+}
+
+.sumbit-btn{
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.sumbit-btn:hover{
+    background-color: #0055a5;
+}
+
+.error-message{
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-status{
+    margin-top: 10px;
+    color: green;
+    font-size: 14px;
+}
