@@ -28,7 +28,7 @@
 
     <section id="history">
         <h2>Our Journey</h2>
-        <p>[Your Club Name] started as a small group of friends with a shared love for football. Over the years, we have achieved [notable achievements, e.g., winning championships]. Today, we compete at [current level of competition] and continue to build a legacy of excellence.</p>
+        <p>FC ESCUELA started as a small group of friends with a shared love for football. Over the years, we have achieved [notable achievements, e.g., winning championships]. Today, we compete at [current level of competition] and continue to build a legacy of excellence.</p>
     </section>
 
     <section id="team">
@@ -43,7 +43,7 @@
 
     <section id="future">
         <h2>Looking Forward</h2>
-        <p>The future holds exciting possibilities for [Your Club Name]. As we continue to grow, we remain focused on our vision: to elevate our club, bring joy to our fans, and make a lasting impact in the football world.</p>
+        <p>The future holds exciting possibilities for FC ESCUELA. As we continue to grow, we remain focused on our vision: to elevate our club, bring joy to our fans, and make a lasting impact in the football world.</p>
     </section>
 
     <footer>
@@ -53,7 +53,7 @@
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Instagram</a></li>
         </ul>
-        <p>Contact us: <a href="mailto:info@yourclub.com">info@yourclub.com</a></p>
+        <p>Contact us: <a href="mailto:info@yourclub.com">minhducworking05@gmail.com</a></p>
     </footer>
 </body>
 </html>
