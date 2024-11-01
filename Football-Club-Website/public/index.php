@@ -13,7 +13,7 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="./About Us/new.blade.php">About Us</a></li>
+        <li><a href="./About Us/AboutUs.blade.php">About Us</a></li>
         <li><a href="#">Fixtures</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">News</a></li>
