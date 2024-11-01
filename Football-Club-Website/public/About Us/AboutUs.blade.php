@@ -9,46 +9,51 @@
 <body>
     <header>
         <h1>About Us</h1>
+        <p>Welcome to FC ESCUELA</p>
     </header>
-
-    <section id="introduction">
-        <h2>Welcome to FC ESCUELA</h2>
-        <p>Since our founding in 2022,FC ESCUELA has been dedicated to inspire passion,pride and unity of student</p>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to inspire and unite our community through football. We strive to showcase the highest level of sportsmanship, teamwork, and dedication, both in our league and beyond.</p>
     </section>
 
-    <section id="journey">
+    <section id="values">
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Passion:</strong> We play every game with heart and pride.</li>
+            <li><strong>Integrity:</strong> Honesty, respect, and fairness guide all our actions.</li>
+            <li><strong>Excellence:</strong> We push ourselves to the limits, always aiming for greatness.</li>
+            <li><strong>Community:</strong> We believe in giving back and supporting youth programs.</li>
+        </ul>
+    </section>
+
+    <section id="history">
         <h2>Our Journey</h2>
-        <p>From Humble beginnings,FC ESCUELA has grown to become a powerful presence in any League</p>
-    </section>
-
-    <section id="mission-vision">
-        <h2>Our Mission and Vision</h2>
-        <p>Our Mission is to foster a love for football and create memory can not be forgotten</p>
+        <p>[Your Club Name] started as a small group of friends with a shared love for football. Over the years, we have achieved [notable achievements, e.g., winning championships]. Today, we compete at [current level of competition] and continue to build a legacy of excellence.</p>
     </section>
 
     <section id="team">
         <h2>Our Team</h2>
-        <p>Our players,cocahes,and staff are the heart of FC ESCUELA.They bring their talent and much more</p>
+        <p>Our team is a blend of seasoned professionals, emerging young talents, and an expert coaching staff. We take pride in training programs that mold our players into elite athletes and principled sportsmen.</p>
     </section>
 
     <section id="community">
-        <h2>Community and Devlopment</h2>
-        <p>At FC ESCUELA,we are deeply commit to the development of our players and the community</p>
+        <h2>Community Impact</h2>
+        <p>Football is more than a game; it's a platform for change. We’re proud to contribute to our community with initiatives like [mention community programs, youth leagues, charity events]. We’re committed to inspiring future generations, promoting health, and creating opportunities through sports.</p>
     </section>
 
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <p>With our hard work and dedication,we have achieved many success in the past years</p>
+    <section id="future">
+        <h2>Looking Forward</h2>
+        <p>The future holds exciting possibilities for [Your Club Name]. As we continue to grow, we remain focused on our vision: to elevate our club, bring joy to our fans, and make a lasting impact in the football world.</p>
     </section>
 
-    <section id="join-us">
-        <h2>Join Us</h2>
-        <p>Whether you're a player,coach,or just a fan,we invite you to join our community</p>
-    </section>
-
-    <section id="connect">
-        <h2>Connect With Us</h2>
-        <p>For the latest updates,match schedules,and exclusive content,follow us on social media.</p>
-    </section>
+    <footer>
+        <p>Join us on our journey by following us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>Contact us: <a href="mailto:info@yourclub.com">info@yourclub.com</a></p>
+    </footer>
 </body>
 </html>
