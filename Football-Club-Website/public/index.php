@@ -12,11 +12,11 @@
     <h1 class="logo">FC ESCUELA</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="../resources/views/home.blade.php">Home</a></li>
         <li><a href="./About Us/AboutUs.blade.php">About Us</a></li>
         <li><a href="./Fixtures/fixtures.blade.php">Fixtures</a></li>
         <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
-        <li><a href="#">News</a></li>
+        <li><a href="./News/News.blade.php">News</a></li>
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
