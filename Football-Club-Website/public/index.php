@@ -17,7 +17,7 @@
         <li><a href="./Fixtures/fixtures.blade.php">Fixtures</a></li>
         <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
         <li><a href="./News/News.blade.php">News</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="./Gallery/Gallery.blade.php">Gallery</a></li>
       </ul>
     </nav>
   </header>
@@ -39,7 +39,7 @@
         <img src="./Img/HomePage/DSC_0010.jpg" alt="News 1">
         <h3>FC ESCUELA win FC 98</h3>
         <p>FC ESCUELA have won the FC 98 tournament, defeating their opponents 3-2 in the final.</p>
-        <button><a href="#">Read More</a></button>
+        <button><a href="./News/News.blade.php">Read More</a></button>
       </div>
       <div class="card">
         <img src="./Img/HomePage/snapedit_1730084318903.jpg" alt="New 2">
