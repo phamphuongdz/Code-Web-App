@@ -18,6 +18,7 @@
         <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
         <li><a href="./News/News.blade.php">News</a></li>
         <li><a href="./Gallery/Gallery.blade.php">Gallery</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
     </nav>
   </header>
@@ -45,13 +46,13 @@
         <img src="./Img/HomePage/snapedit_1730084318903.jpg" alt="New 2">
         <h3>FC ESCUELA draw with FC 11A2 Ngoc Hoi</h3>
         <p>FC ESCUELA have a draw match with FC 11A2 Ngoc Hoi with 1-1 score.</p>
-        <button><a href="#">Read More</a></button>
+        <button><a href="./News/News.blade.php">Read More</a></button>
       </div>
       <div class="card">
         <img src="./Img/HomePage/464812582_539719175474273_4469343083427598304_n.jpg" alt="News 3">
         <h3>FC ESCUELA have a lost match with 12A3 Ngoc Hoi with 3-2 score</h3>
         <p>FC ESCUELA have a lost match with 12A3 Ngoc Hoi</p>
-        <button><a href="#">Read More</a></button>
+        <button><a href="./News/">Read More</a></button>
       </div>
     </div>
   </section>
