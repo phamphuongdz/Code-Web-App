@@ -18,7 +18,7 @@
         <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
         <li><a href="./News/News.blade.php">News</a></li>
         <li><a href="./Gallery/Gallery.blade.php">Gallery</a></li>
-        <li><a href="#">Sign In</a></li>
+       
       </ul>
     </nav>
   </header>
