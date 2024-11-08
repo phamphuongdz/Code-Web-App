@@ -21,56 +21,47 @@
     <button class="sign-in-btn">Sign In</button>
   </nav>
 
-   <!-- Hero Section -->
-     <section class="hero">
-         <h1>Welcome to FC ESCUELA</h1>
-         <button class="learn-more-btn" onclick="toggleModal()">Learn More</button>
-     </section>
+  <!--Hero Section-->
+  <section class = "hero">
+      <div class="hero-content">
+          <h1>Welcome to FC ESCUELA's Offical Website</h1>
+          <p>Experience the Passion of Football With Us</p>
+          <button onclick="scrollToSection('about')">Discover More</button>
+          </div>
+      </section>
+   <!--About Section-->
+   <section id = "about" class="about-section">
+       <h2>About Us</h2>
+       <p>FC ESCUELA is dedicated to excellence on the field and inspring fans</p>
+       </section>
+   <!--Team Section-->
+   <section id="team" class="team-section">
+       <h2>Meet Our Team</h2>
+       <div class = "team-gallery">
+           <div class = "team-member">
+               <img src = "#" alt="Player 1">
+               <p>Player 1</p>
+               </div>
+           <div class="team-member">
+               <img src="#" alt="Player 2">
+               <p>Player 2</p>
+       </section>
+   <!--Match Section-->
+   <section id="matches" class="matches-section">
+       <h2>Upcoming Matches</h2>
+       <ul>
+           <li><strong>Next Match</strong>FC ESCUELA vs FC 11D</li>
+           <li>FC ESCUELA vs FC 1998</li>
+           </ul>
+        <!-- Footer -->
+         <footer>
+           <p>&copy; 2024 [Team Name]. All rights reserved.</p>
+           <p>Follow us on:
+             <a href="#">Facebook</a> |
+             <a href="#">Twitter</a> |
+             <a href="#">Instagram</a>
+           </p>
+         </footer>
 
-     <!-- News Section -->
-     <section class="news">
-         <h2>Latest News</h2>
-         <div class="news-item">
-             <h3>FC ESCUELA lose FC 98</h3>
-             <p>FC ESCUELA lose FC 1998 in the match before Tet Holiday</p>
-             <a href="#">Read more</a>
-         </div>
-         <!-- More news items -->
-     </section>
-
-     <!-- Matches Section -->
-     <section class="matches">
-         <h2>Upcoming Matches</h2>
-         <div class="match">
-             <h3>Match 1</h3>
-             <p>FC ESCUELA vs FC 1998</p>
-         </div>
-         <!-- More matches -->
-     </section>
-
-     <!-- Team Section -->
-     <section class="team">
-         <h2>Our Team</h2>
-         <ul>
-             <li>Player 1</li>
-             <li>Player 2</li>
-             <!-- More players -->
-         </ul>
-     </section>
-
-     <!-- Footer -->
-     <footer>
-         <p>&copy; 2024 Football Club. All Rights Reserved.</p>
-     </footer>
-
-     <!-- Modal -->
-     <div class="modal" id="modal">
-         <div class="modal-content">
-             <span class="close" onclick="toggleModal()">&times;</span>
-             <h2>About Our Club</h2>
-             <p>Welcome to the best club with the most passionate fans and talented players...</p>
-         </div>
-     </div>
-  <section>
 </body>
 </html>
