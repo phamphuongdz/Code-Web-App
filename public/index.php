@@ -57,8 +57,8 @@
          <footer>
            <p>&copy; 2024 [Team Name]. All rights reserved.</p>
            <p>Follow us on:
-             <a href="#">Facebook</a> |
-             <a href="#">Twitter</a> |
+             <a href="#">Facebook</a>
+             <a href="#">Twitter</a>
              <a href="#">Instagram</a>
            </p>
          </footer>
