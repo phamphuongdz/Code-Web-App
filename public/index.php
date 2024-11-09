@@ -55,7 +55,7 @@
            </ul>
         <!-- Footer -->
          <footer>
-           <p>&copy; 2024 [Team Name]. All rights reserved.</p>
+           <p>&copy; 2024 FC ESCUELA. All rights reserved.</p>
            <p>Follow us on:
              <a href="#">Facebook</a>
              <a href="#">Twitter</a>
