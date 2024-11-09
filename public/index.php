@@ -58,10 +58,9 @@
            <p>&copy; 2024 FC ESCUELA. All rights reserved.</p>
            <p>Follow us on:
              <a href="#">Facebook</a>
-             <a href="#">Twitter</a>
+             <a href="#">Google</a>
              <a href="#">Instagram</a>
            </p>
          </footer>
-
 </body>
 </html>
