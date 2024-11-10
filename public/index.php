@@ -3,64 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FC ESCUELA</title>
   <link rel="stylesheet" href="./css/Homepage.css">
-  <title>Homepage</title>
 </head>
 <body>
   <!--Navbar-->
-  <nav class="navbar">
-    <h1>FC ESCUELA</h1>
-    <ul class="nav-links">
-      <li><a href="./index.php">Home</a></li>
-      <li><a href="./About Us/AboutUs.blade.php">About Us</a></li>
-      <li><a href="./Fixtures/fixtures.blade.php">Fixtures</a></li>
-      <li><a href="./News/News.blade.php">News</a></li>
-      <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
-      <li><a href="./Gallery/Gallery.blade.php">Gallery</a></li>
-    </ul>
-    <button class="sign-in-btn">Sign In</button>
-  </nav>
+  <header class="navbar">
+    <h1 class="logo">FC ESCUELA</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.php">Home</a></li>
+        <li><a href="./About Us/AboutUs.blade.php">About Us</a></li>
+        <li><a href="./Fixtures/fixtures.blade.php">Fixtures</a></li>
+        <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
+        <li><a href="">Match</a></li>
+        <li><a href="./Gallery/Gallery.blade.php">Gallery</a></li>
+        <li><a href="./Sign In/SignIn.blade.php">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!--Hero Section-->
-  <section class = "hero">
-      <div class="hero-content">
-          <h1>Welcome to FC ESCUELA's Offical Website</h1>
-          <p>Experience the Passion of Football With Us</p>
-          <button onclick="scrollToSection('about')">Discover More</button>
-          </div>
-      </section>
-   <!--About Section-->
-   <section id = "about" class="about-section">
-       <h2>About Us</h2>
-       <p>FC ESCUELA is dedicated to excellence on the field and inspring fans</p>
-       </section>
-   <!--Team Section-->
-   <section id="team" class="team-section">
-       <h2>Meet Our Team</h2>
-       <div class = "team-gallery">
-           <div class = "team-member">
-               <img src = "#" alt="Player 1">
-               <p>Player 1</p>
-               </div>
-           <div class="team-member">
-               <img src="#" alt="Player 2">
-               <p>Player 2</p>
-       </section>
-   <!--Match Section-->
-   <section id="matches" class="matches-section">
-       <h2>Upcoming Matches</h2>
-       <ul>
-           <li><strong>Next Match</strong>FC ESCUELA vs FC 11D</li>
-           <li>FC ESCUELA vs FC 1998</li>
-           </ul>
-        <!-- Footer -->
-         <footer>
-           <p>&copy; 2024 FC ESCUELA. All rights reserved.</p>
-           <p>Follow us on:
-             <a href="#">Facebook</a>
-             <a href="#">Google</a>
-             <a href="#">Instagram</a>
-           </p>
-         </footer>
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h2>Welcome to FC ESCUELA</h2>
+      <p>Join us in supporting our team to victory!</p>
+      <button onclick="learnMore()"><a href="#">Learn More</a></button>
+    </div>
+  </section>
+
+  <!--News Section-->
+  <section id="news" class="news-section">
+    <h2>Latest News</h2>
+    <div class="news-cards">
+      <div class="card">
+        <img src="./Img/HomePage/DSC_0010.jpg" alt="News 1">
+        <h3>FC ESCUELA lose FC 1998</h3>
+        <p>FC ESCUELA have won the FC 1998 tournament, lost their opponents 3-2 in the final.</p>
+        <button><a href="#">Read More</a></button>
+      </div>
+      <div class="card">
+        <img src="./Img/HomePage/snapedit_1730084318903.jpg" alt="New 2">
+        <h3>FC ESCUELA draw with FC 11A2 Ngoc Hoi</h3>
+        <p>FC ESCUELA have a draw match with FC 11A2 Ngoc Hoi with 1-1 score.</p>
+        <button><a href="#">Read More</a></button>
+      </div>
+      <div class="card">
+        <img src="./Img/HomePage/464812582_539719175474273_4469343083427598304_n.jpg" alt="News 3">
+        <h3>FC ESCUELA have a lost match with 12A3 Ngoc Hoi with 3-2 score</h3>
+        <p>FC ESCUELA have a lost match with 12A3 Ngoc Hoi</p>
+        <button><a href="#">Read More</a></button>
+      </div>
+    </div>
+  </section>
+  <!--Team Section-->
+  <section id="team" class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-cards">
+      <div class="card">
+        <img src="./Img/Player/DWG00614.jpg" alt="Player 1">
+        <h3>Player 1</h3>
+        <p>Position: Goalkeeper</p>
+      </div>
+      <div class="card">
+        <img src="./Img/Player/323710267_1454181644992492_5303137637488456783_n.jpg" alt="Player 2">
+        <h3>Player 2</h3>
+        <p>Position: Midfielder</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer">
+    <p>&copy; 2024 FC ESCUELA.All Right Reserved</p>
+  </footer>
+
+  <script src="./JS/script.js"></script>
 </body>
 </html>
