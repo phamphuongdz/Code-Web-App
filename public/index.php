@@ -27,7 +27,7 @@
     <div class="hero-content">
       <h2>Welcome to FC ESCUELA</h2>
       <p>Join us in supporting our team to victory!</p>
-      <button onclick="learnMore()"><a href="#">Learn More</a></button>
+      <button onclick="learnMore()"><a href="./About Us/AboutUs.blade.php">Learn More</a></button>
     </div>
   </section>
 
