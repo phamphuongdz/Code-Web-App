@@ -18,8 +18,7 @@
         <li><a href="./Contact Us/Contact.blade.php">Contact Us</a></li>
         <li><a href="">Match</a></li>
         <li><a href="./Gallery/Gallery.blade.php">Gallery</a></li>
-        <li><a href="./Sign In/SignIn.blade.php">Login</a></li>
-      </ul>
+        <li><a href="./Sign In/SignIn.blade.php">Sign In</a></li>
     </nav>
   </header>
 
