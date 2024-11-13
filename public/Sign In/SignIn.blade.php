@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Log In</title>
+    <title>Sign In</title>
 </head>
 <body>
-    <div class="container">
-        <form id="signin-form" action="signin.php" method="POST">
-            <h2>Sign In</h2>
-
-            <!--Social Media-->
-            <div class="social-button">
-                <button type="button" id="google-signin"><a href="">Sign In with Google</a></button>
-                <button type="button" id="facebook-signin"><a href="">Sign In with Facebook</a></button>
-            </div>
-
-            <p>Or sign in with your email address</p>
+    <div class="form-container">
+        <h2>Sign In</h2>
+        <form id="signInForm" action="./scripts/signin.php" method="post">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
             <button type="submit">Sign In</button>
+
+            <p>Or sign in with</p>
+            <div class="social-buttons">
+                <button onclick="socialSignIn('facebook')">Facebook</button>
+                <button onclick="socialSignIn('google')">Google</button>
+                <button onclick="socialSignIn('instagram')">Instagram</button>
+            </div>
         </form>
     </div>
-     <!-- Include JavaScript for OAuth functionality -->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
