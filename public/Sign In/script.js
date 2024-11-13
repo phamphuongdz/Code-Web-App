@@ -1,58 +1,62 @@
-// app.js
+const { data } = require("autoprefixer");
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyACAc3hXgn5JNvt7Zt3qlUMS_tdAA6aWJ0",
-  authDomain: "signinauthencation.firebaseapp.com",
-  projectId: "signinauthencation",
-  storageBucket: "signinauthencation.firebasestorage.app",
-  messagingSenderId: "87471213336",
-  appId: "1:87471213336:web:aed87e889f782e72e56c6d",
-  measurementId: "G-6B8FHH196X"
-};
+document.getElementById("signin-form").addEventListener("submit",function(event){
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-
-// Email/Password Sign-In
-document.getElementById('signInForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            alert('Signed in successfully!');
-            // Redirect to dashboard or homepage
-        })
-        .catch((error) => {
-            alert(`Error: ${error.message}`);
-        });
+    if (!email || !password) {
+        event.preventDefault();
+        alert("Please enter both email and password");
+    }
 });
 
-// Google Sign-In
-document.getElementById('googleSignIn').addEventListener('click', () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider)
-        .then((result) => {
-            alert('Signed in with Google!');
-            // Redirect to dashboard or homepage
-        })
-        .catch((error) => {
-            alert(`Error: ${error.message}`);
+//Initialize Google Sign-In
+function onSignIn(googleUser){
+    const profile = googleUser.getBasicProfile();
+    const idToken = googleUser.getAuthResponse().id_token;
+}
+
+//Send ID token to your server
+fetch("google_signin.php",{
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({idToken})
+}).then(response => response.text)
+  .then(data => alert(data));
+
+gapi.load('auth2',function(){
+    gapi.auth2.init({
+        client_id: 'YOUR_GOOGLE_CLIENT_ID',
+    }).then(function(auth2){
+        document.getElementById('google-signin').addEventListener('click',function(){
+            auth2.signIn().then(onSignIn);
         });
+    });
 });
 
-// Facebook Sign-In
-document.getElementById('facebookSignIn').addEventListener('click', () => {
-    const provider = new firebase.auth.FacebookAuthProvider();
-    auth.signInWithPopup(provider)
-        .then((result) => {
-            alert('Signed in with Facebook!');
-            // Redirect to dashboard or homepage
-        })
-        .catch((error) => {
-            alert(`Error: ${error.message}`);
-        });
-});
+// Initialize Facebook SDK
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'YOUR_FACEBOOK_APP_ID', // replace with your Facebook App ID
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v16.0'
+    });
+  
+    document.getElementById('facebook-signin').addEventListener('click', function() {
+      FB.login(function(response) {
+        if (response.status === 'connected') {
+          FB.api('/me', {fields: 'name,email'}, function(profile) {
+            // Send profile to server
+            fetch("facebook_signin.php", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ accessToken: response.authResponse.accessToken })
+            }).then(response => response.text())
+              .then(data => alert(data));
+          });
+        }
+      }, {scope: 'email'});
+    });
+  };
+  
