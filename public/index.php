@@ -36,7 +36,7 @@
     <h2>Latest News</h2>
     <div class="news-cards">
       <div class="card">
-        <img src="./Img/HomePage/DSC_0010.jpg" alt="News 1">
+        <img src="./Gallery/Image/DSC_0010.jpg" alt="News 1">
         <h3>FC ESCUELA lose FC 1998</h3>
         <p>FC ESCUELA have won the FC 1998 tournament, lost their opponents 3-2 in the final.</p>
         <button><a href="#">Read More</a></button>
