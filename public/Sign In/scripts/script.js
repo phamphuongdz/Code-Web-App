@@ -2,7 +2,7 @@ document
         .querySelector("form")
         .addEventListener("submit", function (event) {
           event.preventDefault();
-          window.location.href = ".././HTML/home-page.html";
+          window.location.href = "../index.php";
         });
       document
         .querySelector('a[href="./Sign Up/index.html"]')
